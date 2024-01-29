@@ -2,19 +2,19 @@
 
 <!-- describe your project -->
 
+- _simple portfolio_
+
 ---
 
 ## Setup
 
-<!-- what code do you need just to open the project? this might include:
-  - boilerplate code (https://brandlitic.com/what-is-boilerplate-code/)
-  - loading program data
-  - rendering the initial user interface
--->
+- _copy repositories_
+
+- _git clone_
+
+- _run npm install in vscode_
 
 ---
-
-<!-- copy this section once for each must-have user story -->
 
 ## user story
 

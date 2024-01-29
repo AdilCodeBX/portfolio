@@ -1,6 +1,6 @@
 # Name of project
 
-> A longer description
+> Simple portfolio
 
 ## Table of contents
 
@@ -22,7 +22,7 @@
 
 ## General info
 
-> A short description
+> Simple portfolio using html and css
 
 ## Screenshots
 
@@ -33,16 +33,16 @@
 - Node 14.16.0
 - VSC code
 - JavaScript
-- ...
-- ...
+- HTML 5
+- CSS 3
 
 ## Setup
 
-- `npm run start`
+- `npm run install`
 
 ## Code Examples
 
-```js
+```HTML
 // the hello world program
 console.log("Hello World");
 ```
@@ -51,9 +51,9 @@ console.log("Hello World");
 
 List of features ready and Todos for future development
 
--
--
--
+- Live Server
+- CSS
+- Js
 
 To-do list:
 
@@ -70,7 +70,7 @@ Project by freeCodeCamp.org
 
 ## Contact
 
-By [Name]
+By [Adil]
 
 ## Instructions for use
 
