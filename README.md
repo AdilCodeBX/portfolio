@@ -26,7 +26,7 @@
 
 ## Screenshots
 
-![Example screenshot](./planning/screenshot.jpg)
+![Example screenshot](./planning/code.jpg.jpg)
 
 ## Technologies
 
@@ -43,8 +43,9 @@
 ## Code Examples
 
 ```HTML
-// the hello world program
-console.log("Hello World");
+//   <span class="skill-label">HTML</span>
+        <progress value="70" max="100"></progress>
+      </div>;
 ```
 
 ## Features

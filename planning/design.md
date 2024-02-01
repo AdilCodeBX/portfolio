@@ -8,10 +8,11 @@
 <!-- describe the reasoning behind your group's design and wireframe -->
 <!-- include other centralized decisions like fonts, palates, ... -->
 
-- _text color : #FFFFFF rgb(255,255,255) white_
-- _background color :#333333 rgb(51,51,51)_
+- _text color : #FFFFFF rgb(255 255 255) white_
 
-- _Elements color :#666633 rgb(102,102,51)_
+- _background color :#333333 rgb(51 51 51)_
+
+- _Elements color : rgb(153 153 102)_
 
 ---
 
@@ -25,7 +26,11 @@
 
 - _About me_
 
-![About me](../public/img/about-me.png)
+![About](../public/img/about.png)
+
+- _Contact_
+
+![Projects](../public/img/contact.png)
 
 - _Contact_
 
