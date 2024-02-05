@@ -10,22 +10,82 @@
 
   <body>
     <header>
-      <div class="title-navbar">
-        <h1 class="title">WELCOME TO MY PORTFOLIO👋</h1>
-        <a class="link-about" href="./pages/about.html">ABOUT</a>
-        <a class="link-projects" href="./pages/projects.html">PROJECTS</a>
-        <a class="link-contact" href="./pages/contact.html">CONTACT</a>
-      </div>
+      <nav>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <h1 class="title">WELCOME TO MY PORTFOLIO👋</h1>
+          </li>
+          <li class="nav-li"><a class="link" href="#about">ABOUT</a></li>
+          <li class="nav-li"><a class="link" href="#skills">SKILLS</a></li>
+          <li class="nav-li"><a class="link" href="#projects">PROJECTS</a></li>
+          <li class="nav-li"><a class="link" href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- contain- main content-->
-    <div class="container">
-      <p class="hello">
-        Hello! I'am Adil, a junior front-end web developer based in Belgium.
+    <div class="container-intro">
+      <p class="intro">
+        Hello! I'am Adil,
+        <br />an aspiring Front-end <br />web developer based in Belgium.
       </p>
     </div>
+
+    <div class="container-about">
+      <h2 id="about">About</h2>
+      <div class="text-photo">
+        <p>
+          Currently discovering the digital <br />
+          world, immersed in a new challenge, <br />
+          front end web developer student at<br />
+          <abbr title="Hack Your Future">HYF</abbr> Belgium.
+        </p>
+        <picture>
+          <img class="photo" src="./public/img/profile-photo.jpg" alt="photo" />
+        </picture>
+      </div>
+    </div>
+    <!-- skills-->
+    <div class="container-skills">
+      <h2 id="skills">Skills</h2>
+      <div class="container-list">
+        <div class="container-knowledge">
+          <h3>knowledge</h3>
+          <ul>
+            <li>Markdown</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Github</li>
+          </ul>
+        </div>
+
+        <div class="container-learning">
+          <h3>learning</h3>
+          <ul>
+            <li>Javascript</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- project-->
+
+    <div class="container-projects">
+      <h2 id="projects">Project</h2>
+      <p class="text-projects">Coming soon</p>
+    </div>
+
+    <!-- contact-->
+    <div class="container-contact">
+      <h2 id="contact">Contact</h2>
+      <address>
+        <p>Email: <a href="mailto:info@example.com">jihadmdna@gmail.com</a></p>
+      </address>
+    </div>
+
     <!-- copyright-->
     <footer>
-      <p class="">&copy; 2024 Adil</p>
+      <p>&copy;2024 Adil</p>
     </footer>
   </body>
 </html>

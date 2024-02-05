@@ -4,29 +4,49 @@
 
 body {
   background-color: rgb(51 51 51);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* title */
 
 .title {
+  font-size: 30px;
   padding-left: 65px;
-  padding-right: 670px;
-  margin-top: 10px;
-  display: inline-block;
+  display: inline;
+  padding-right: 500px;
+}
+
+/* navbar */
+
+nav {
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: gray;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: fixed;
+}
+
+.nav-ul {
+  list-style-type: none;
+  padding-right: 65px;
+}
+
+.link {
+  margin: 10px;
+}
+
+.nav-li {
+  display: inline;
+  font-weight: bold;
+}
+
+nav:hover {
+  background-color: grey;
 }
 
 /* links */
-
-.title-navbar {
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.link-about,
-.link-projects {
-  padding-right: 20px;
-}
 
 a {
   text-decoration: none;
@@ -37,38 +57,110 @@ a:hover {
 }
 
 a:active {
-  color: grey;
-}
-
-/* container */
-
-.container {
-  background-color: rgb(153 153 102);
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 10px;
-  background-image: url("../public/img/web.png");
-  background-size: 40px;
-  background-position: center;
+  color: gray;
 }
 
 /* intro */
 
-.hello {
-  font-size: 40px;
-  color: white;
-  background-color: rgb(51 51 51);
-  border-radius: 5px;
+.container-intro {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 400px;
 }
 
-footer {
+.intro {
+  font-size: 25px;
+  border-radius: 5px;
+  margin-left: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(20, end);
+  border-right: transparent;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* about */
+
+.container-about {
+  height: 400px;
+  padding-left: 65px;
+  font-size: 20px;
+}
+
+.photo {
+  border-radius: 156px;
+  border-color: gray;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  margin-right: 200px;
+}
+
+.text-photo {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* skills */
+
+.container-skills {
+  height: 400px;
+  padding-left: 65px;
+  font-size: 20px;
+}
+
+.container-list {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 350px;
+}
+
+.container-knowledge,
+.container-learning {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255 255 255);
+  height: 300px;
+  width: 300px;
+  border: solid 2px;
+  border-radius: 50px;
+  border-color: gray;
+}
+
+/* Project */
+
+.container-projects {
+  height: 300px;
+  padding-left: 65px;
+  font-size: 20px;
+}
+
+.text-projects {
+  display: flex;
+  justify-content: center;
+}
+
+/* contact */
+
+.container-contact {
+  height: 200px;
+  padding-left: 65px;
+  font-size: 20px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
 }
