@@ -1,3 +1,13 @@
+/* general */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 * {
   color: rgb(255 255 255);
 }
@@ -5,44 +15,44 @@
 body {
   background-color: rgb(51 51 51);
   font-family: "Courier New", Courier, monospace;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 40px;
+  margin-left: 65px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* title */
 
 .title {
-  font-size: 30px;
-  padding-left: 65px;
-  display: inline;
-  padding-right: 500px;
+  font-size: 25px;
 }
 
 /* navbar */
 
-nav {
-  border-radius: 10px;
-  border: solid 2px;
-  border-color: gray;
+header {
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
+  border: solid;
+  border-color: gray;
+  border-radius: 5px;
+  height: 60px;
+  width: 1480px;
+  padding: 30px;
+  margin: 20px;
 }
 
-.nav-ul {
-  list-style-type: none;
-  padding-right: 65px;
-}
-
-.link {
-  margin: 10px;
-}
-
-.nav-li {
+nav li {
+  list-style: none;
   display: inline;
-  font-weight: bold;
 }
 
-nav:hover {
+header:hover {
   background-color: grey;
 }
 
@@ -50,6 +60,7 @@ nav:hover {
 
 a {
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
@@ -63,14 +74,17 @@ a:active {
 /* intro */
 
 .container-intro {
-  background-color: transparent;
+  background-image: url("../public/img/sky.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
-  height: 400px;
+  height: 800px;
 }
 
 .intro {
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: bold;
   border-radius: 5px;
   margin-left: 70px;
   overflow: hidden;
@@ -92,9 +106,11 @@ a:active {
 /* about */
 
 .container-about {
-  height: 400px;
-  padding-left: 65px;
-  font-size: 20px;
+  height: 500px;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .photo {
@@ -103,13 +119,6 @@ a:active {
   width: 280px;
   height: 280px;
   overflow: hidden;
-  display: flex;
-  margin-right: 200px;
-}
-
-.text-photo {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* skills */
@@ -118,49 +127,190 @@ a:active {
   height: 400px;
   padding-left: 65px;
   font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
-.container-list {
-  display: flex;
-  justify-content: space-between;
-  margin-inline: 350px;
+.container-skills li {
+  list-style-type: none;
 }
 
 .container-knowledge,
 .container-learning {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 300px;
   width: 300px;
-  border: solid 2px;
-  border-radius: 50px;
-  border-color: gray;
+  list-style-type: none;
+  font-size: 25px;
 }
 
 /* Project */
 
 .container-projects {
-  height: 300px;
+  height: 400px;
   padding-left: 65px;
-  font-size: 20px;
-}
-
-.text-projects {
+  font-size: 30px;
   display: flex;
+  align-content: center;
   justify-content: center;
+  align-items: center;
 }
 
 /* contact */
 
 .container-contact {
-  height: 200px;
+  height: 300px;
   padding-left: 65px;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-contact > p {
+  margin-bottom: 30px;
+  font-size: 30px;
 }
 
 /* footer */
 
-footer {
-  text-align: center;
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: grey;
+  height: 100px;
+}
+
+/* responsive */
+
+@media (max-width: 2560px) {
+}
+
+/* 4k screen */
+@media (max-width: 1440px) {
+}
+
+/* laptop */
+@media (max-width: 1024px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Mobile l */
+
+@media (max-width: 425px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}
+
+/* Mobile m */
+@media (max-width: 375px) {
+  header {
+    width: 335px;
+  }
+}
+
+/* Mobile s */
+@media (max-width: 320px) {
+  header {
+    width: 285px;
+    padding: 6px;
+    margin: 17px;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .nav-ul {
+    font-size: 11px;
+  }
+
+  .intro {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 13px;
+    color: black;
+  }
+
+  .container-intro {
+    height: 595px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-about {
+    font-size: 14px;
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .photo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .container-skills {
+    flex-direction: column;
+    padding-left: 1px;
+  }
+
+  .container-knowledge .container-learning {
+    font-size: 20px;
+  }
+
+  .container-projects {
+    padding-left: 1px;
+  }
+
+  .text-projects {
+    font-size: 25px;
+  }
+
+  .container-contact {
+    padding-left: 1px;
+    text-align: center;
+  }
+
+  .container-contact p {
+    font-size: 15px;
+  }
+
+  .copy {
+    height: 50px;
+  }
+
+  .copy img {
+    width: 23px;
+  }
+
+  .copy p {
+    font-size: 12px;
+  }
 }

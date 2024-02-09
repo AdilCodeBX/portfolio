@@ -10,15 +10,13 @@
 
   <body>
     <header>
+      <h1 class="title">WELCOME TO MY PORTFOLIO👋</h1>
       <nav>
         <ul class="nav-ul">
-          <li class="nav-li">
-            <h1 class="title">WELCOME TO MY PORTFOLIO👋</h1>
-          </li>
-          <li class="nav-li"><a class="link" href="#about">ABOUT</a></li>
-          <li class="nav-li"><a class="link" href="#skills">SKILLS</a></li>
-          <li class="nav-li"><a class="link" href="#projects">PROJECTS</a></li>
-          <li class="nav-li"><a class="link" href="#contact">CONTACT</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
@@ -30,62 +28,69 @@
       </p>
     </div>
 
+    <h2 id="about">About</h2>
     <div class="container-about">
-      <h2 id="about">About</h2>
-      <div class="text-photo">
-        <p>
-          Currently discovering the digital <br />
-          world, immersed in a new challenge, <br />
-          front end web developer student at<br />
-          <abbr title="Hack Your Future">HYF</abbr> Belgium.
-        </p>
-        <picture>
-          <img class="photo" src="./public/img/profile-photo.jpg" alt="photo" />
-        </picture>
-      </div>
+      <p>
+        Currently discovering the digital <br />
+        world, immersed in a new challenge, <br />
+        front end web developer student at<br />
+        <abbr title="Hack Your Future">HYF</abbr> Belgium.
+      </p>
+      <picture>
+        <img class="photo" src="./public/img/profile-photo.jpg" alt="photo" />
+      </picture>
     </div>
     <!-- skills-->
+    <h2 id="skills">Skills</h2>
     <div class="container-skills">
-      <h2 id="skills">Skills</h2>
-      <div class="container-list">
-        <div class="container-knowledge">
-          <h3>knowledge</h3>
-          <ul>
-            <li>Markdown</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Github</li>
-          </ul>
-        </div>
+      <div class="container-knowledge">
+        <h3>Knowledge</h3>
+        <ul>
+          <li>&#10003; Markdown</li>
+          <li>&#10003; HTML5</li>
+          <li>&#10003; CSS3</li>
+          <li>&#10003; Github</li>
+        </ul>
+      </div>
 
-        <div class="container-learning">
-          <h3>learning</h3>
-          <ul>
-            <li>Javascript</li>
-            <li>React</li>
-          </ul>
-        </div>
+      <div class="container-learning">
+        <h3>Learning</h3>
+        <ul>
+          <li>&#10003; Javascript</li>
+          <li>&#10003; React</li>
+        </ul>
       </div>
     </div>
 
     <!-- project-->
-
-    <div class="container-projects">
-      <h2 id="projects">Project</h2>
-      <p class="text-projects">Coming soon</p>
-    </div>
-
+    <section>
+      <h2 id="projects">Projects</h2>
+      <div class="container-projects">
+        <p class="text-projects">Coming soon</p>
+      </div>
+    </section>
     <!-- contact-->
-    <div class="container-contact">
+    <section>
       <h2 id="contact">Contact</h2>
-      <address>
-        <p>Email: <a href="mailto:info@example.com">jihadmdna@gmail.com</a></p>
-      </address>
-    </div>
-
+      <div class="container-contact">
+        <p>feel free to contact me.</p>
+        <address>
+          <p>
+            Email: <a href="mailto:info@example.com">jihadmdna@gmail.com</a>
+          </p>
+        </address>
+      </div>
+    </section>
     <!-- copyright-->
     <footer>
-      <p>&copy;2024 Adil</p>
+      <div class="copy">
+        <a href="https://github.com/AdilCodeBX">
+          <figure>
+            <img src="./public/img/github.webp" alt="git-icon" />
+          </figure>
+        </a>
+        <p>&copy;2024 | Adil</p>
+      </div>
     </footer>
   </body>
 </html>
